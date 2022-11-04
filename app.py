@@ -25,7 +25,7 @@ def send_email():
     try:
         message = "Violence Alert!"
         sender_mail = env.str('EMAIL', multiline=True)
-        receiver_mail = ['pakeeza15pa@gmail.com']    # PUT ALL Recipients emails here
+        receiver_mail = ['']    # PUT ALL Recipients emails here
         s_msg = Message(message, sender = sender_mail , recipients = receiver_mail)
         s_msg.body = "Violence is Detect in this image!!"
         mail.send(s_msg)
